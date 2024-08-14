@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Common css style start*/
+.container{
+    max-width: 1240px;
+    margin: 0% auto;
+}
+.around{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+}
+/* Common css style end*/
+
+/* This is nabvar section */
+.navbar{
+    max-width: 93%;
+    margin: 0% auto;
+    display: flex;
+    gap: 50px;
+    padding: 20px 40px;
+    color: #0b0736;
+
+    & h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    & div{
+        display: flex;
+        gap: 8px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
+/* banner section */
+.banner_img{
+    position: absolute;
+    max-width: 50dvw;
+    right: 0;
+    top: 0;
+    z-index: -155;
+}
+.banner_section{
+    padding: 120px 0;
+    margin-left: 150px;
+
+    & h1{
+        font-size: 90px;
+        font-weight: bold;
+        color: #0b0736;
+    }
+
+    & div{
+        display: flex;
+        gap: 5px;
+        padding: 20px 0;
+        font-size: 26px;
+        color: #0b0736;
+    }
+
+    & button{
+        padding: 20px 30px;
+        border: none;
+        background-color: #0b0736;
+        color: #fff;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+/* this is target section*/
+.target_section{
+    padding: 140px 0;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .target_details{
+        & h2{
+            font-size: 65px;
+            font-weight: 600;
+        }
+        .details{
+            font-size: 24px;
+            color: gray;
+            padding: 40px 0;
+            font-weight: 400;
+        }
+        .apple_design{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 28px;
+            background-color: #cce8fd;
+            border-radius: 20px;
+            width: fit-content;
+             
+            & p{
+                font-size: 12px;
+                color: #9393c4;
+            }
+
+            & h3{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            & img{
+                width: 25px;
+            }
+        }
+    }
+}
+
+/* this is track section*/
+.track_section{
+    position: relative;
+
+    .bg_img{
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        z-index: -1;
+    }
+    .left_side{
+        & h2{
+            font-size: 85px;
+        }
+        .img_grid{
+            padding-left: 80px;
+            padding-top: 80px;
+            display: flex;
+            gap: 20px;
+
+            & div{
+               width: 150px;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+            }
+            & div:nth-child(2){
+                margin-top: 40px;
+            }
+        }
+        
+    }
+    .right_side{
+        & h3{
+            font-size: 40px;
+            font-weight: 400;
+            padding-right: 8rem;
+            color: #9393c4;
+        }
+        .details_part{
+            display: flex;
+            gap: 30px;
+            align-items: start;
+            margin-top: 60px;
+
+            & div{
+                padding-top: 20px;
+
+                & h2{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                & p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #9393c4;
+                    padding-top: 20px;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+/* this is caliries section*/
+.calories_section{
+    padding: 140px 0;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .calories_details{
+        & h2{
+            font-size: 65px;
+            font-weight: 600;
+        }
+        .calories{
+            font-size: 24px;
+            color: gray;
+            padding: 40px 0;
+            font-weight: 400;
+        }
+        .apple_design{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 28px;
+            background-color: #cce8fd;
+            border-radius: 20px;
+            width: fit-content;
+             
+            & p{
+                font-size: 12px;
+                color: #9393c4;
+            }
+
+            & h3{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            & img{
+                width: 25px;
+            }
+        }
+    }
+}
+
+/* this is partnership section*/
+.partnership{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*this is join section */
+.join{
+    width: 90%;
+    margin: 120px auto;
+    background-color: #d9f4ff;
+    border-radius: 56px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+
+    & .details{
+        display: flex;
+        justify-content: center;
+        margin: 0% auto;
+        flex-direction: column;
+        gap: 24px;
+    }
+    & h2{
+        font-size: 68px;
+    }
+
+    .apple_design{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 28px;
+        background-color: #130f49;
+        border-radius: 20px;
+        width: fit-content;
+         
+        & p{
+            font-size: 12px;
+            color: #9393c4;
+        }
+
+        & h3{
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+        & img{
+            width: 25px;
+        }
+    }
+}
+
+/* this is copyright section */
+.copyright{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9393c4;
+}
+
+
+/* responsive for mobile */
+@media (max-width: 767px){
+    .container{
+        padding: 0 16px;
+    }
+    .around{
+        gap: 3rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .banner_section{
+        padding: 60px 16px;
+        position: relative;
+        right: 115px;
+    
+        & h1{
+            font-size: 40px;
+        }
+    
+        & div{
+            padding: 16px 0;
+            font-size: 20px;
+        }
+
+}
+
+.track_section{
+    .bg_img{
+        left: 0%;
+        top: 0%;
+        width: 100%;
+    }
+    .left_side{
+        & h2{
+            font-size: 40px;
+        }
+        .img_grid{
+            padding-left: 40px;
+            padding-top: 40px;
+            gap: 16px;
+
+            & div{
+               width: 130px;
+               gap: 16px;
+            }
+        }
+        
+    }
+    .right_side{
+        & h3{
+            font-size: 24px;
+            padding-right: 0rem;
+        }
+        .details_part{
+            gap: 16px;
+            margin-top: 30px;
+
+            & div{
+                padding-top: 16px;               
+            }
+        }
+    }
+}
+
+.partnership{
+    margin-top: 60px;
+}
+
+.join{
+    margin: 80px auto;
+    border-radius: 24px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    & .details{
+        margin: 24px;
+    }
+    & h2{
+        font-size: 45px;
+    }
+
+    .apple_design{
+        gap: 12px;
+        padding: 12px 24px;
+        border-radius: 16px;
+
+        & h3{
+            font-size: 16px;
+        }
+        & img{
+            width: 20px;
+        }
+    }
+    & img{
+        width: 100%;
+    }
+}
+
+
+}
+
+
+
+
